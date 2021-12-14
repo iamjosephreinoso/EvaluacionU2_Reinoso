@@ -37,8 +37,7 @@ public class VehiculoDAO {
 	public List<Vehiculo> getList(){
 		List<Vehiculo> listado = new ArrayList<Vehiculo>();
 		
-		String jpql = "SELECT op FROM Vehiculo op "
-				+ "WHERE op.operacion = ?1";
+		String jpql = "SELECT op FROM Vehiculo op ";
 		Query query = em.createQuery(jpql, Vehiculo.class);
 		
 		listado = query.getResultList();

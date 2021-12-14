@@ -21,4 +21,6 @@ public class VehiculoON implements VehiculoONRemote {
 	public List<Vehiculo> getList(){
 		return daoProducto.getList();
 	}
+	
+	
 }
